@@ -2,13 +2,13 @@
 
 ![image](https://github.com/user-attachments/assets/1252e3bc-c771-4cf4-9c64-ba74ae926f11)
 
-![License Badge](https://img.shields.io/github/license/Oidaho/zenit)
+![License Badge](https://img.shields.io/github/license/Oidaho/Zenit)
 
-![GitHub Release](https://img.shields.io/github/v/release/Oidaho/zenit)
-![GitHub Downloads](https://img.shields.io/github/downloads/Oidaho/zenit/total)
+![GitHub Release](https://img.shields.io/github/v/release/Oidaho/Zenit)
+![GitHub Downloads](https://img.shields.io/github/downloads/Oidaho/Zenit/total)
 
-![GitHub watchers](https://img.shields.io/github/watchers/oidaho/zenit)
-![GitHub Repo stars](https://img.shields.io/github/stars/Oidaho/zenit)
+![GitHub watchers](https://img.shields.io/github/watchers/oidaho/Zenit)
+![GitHub Repo stars](https://img.shields.io/github/stars/Oidaho/Zenit)
 
 
 ## 📄 About ##
