@@ -1,61 +1,115 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
+  "final_space": true,
+  "console_title_template": "{{if .Root}} (root) {{ end }} {{ title .UserName}} - {{ title .Shell }}",
   "blocks": [
     {
       "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "type": "status",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "template": " {{ reason .Code }}"
+          "type": "os",
+          "style": "diamond",
+          "foreground": "#0654fc",
+          "background": "#2d2c2d",
+          "trailing_diamond": "\ue0b0",
+          "template": "{{ if .WSL }}WSL at {{ end }} {{ .Icon }} "
         },
         {
           "type": "root",
-          "style": "plain",
+          "style": "diamond",
           "foreground": "#d00000",
+          "background": "#2d2c2d",
+          "leading_diamond": "<transparent>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
           "template": " \uf0e7 "
         },
         {
-          "type": "os",
-          "style": "plain",
-          "foreground": "#007ACC",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
-        },
-        {
           "type": "session",
-          "style": "plain",
+          "style": "diamond",
           "foreground": "#ff00ff",
-          "template": " {{ .UserName }}@{{ .HostName }} "
+          "background": "#2d2c2d",
+          "leading_diamond": "<transparent>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ if .SSHSession }}\ueba9 {{ end }} {{ .UserName }}@{{ .HostName }} "
         },
         {
           "type": "path",
-          "style": "plain",
+          "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#007ACC",
-          "template": "<transparent>\ue0b0</> {{ .Path }} ",
+          "background": "#2e6ef8",
+          "leading_diamond": "<transparent>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .Folder }} ",
           "properties": {
             "folder_icon": "\uf115",
-            "folder_separator_icon": " \ue0b1 ",
+            "folder_separator_icon": "\\",
             "style": "full"
           }
         },
         {
           "type": "git",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "background": "#007ACC",
-          "template": "<#ffffff>\ue0b1</> {{ .HEAD }} "
+          "style": "diamond",
+          "foreground": "transparent",
+          "background": "#FB4F28",
+          "leading_diamond": "<transparent>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .HEAD }} "
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "foreground": "#ff00ff",
+          "background": "#2d2c2d",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "<transparent>\ue0b2</>",
+          "template": " \ueba2 {{ .FormattedMs }} ",
+          "properties": {
+            "always_enabled": true,
+            "style": "austin",
+            "threshold": 500
+          }
         },
         {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#007ACC",
-          "template": "\ue0b0 "
+          "type": "status",
+          "style": "diamond",
+          "background": "#2d2c2d",
+          "foreground_templates": [
+            "{{ if .Error }}#ff0000{{ else }}#04f800{{ end }}"
+          ],
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "<transparent>\ue0b2</>",
+          "template": "{{ if .Error }} Failed {{else}} Success {{ end }}",
+          "properties": {
+            "always_enabled": false
+          }
+        },
+        {
+          "type": "time",
+          "style": "diamond",
+          "foreground": "#ff00ff",
+          "background": "#2d2c2d",
+          "leading_diamond": "\ue0b2",
+          "template": " {{ .CurrentDate | date .Format }} ",
+          "properties": {
+            "time_format": "15:04:05"
+          }
         }
       ]
     }
-  ]
+  ],
+  "transient_prompt": {
+    "foreground": "#ffffff",
+    "background": "transparent"
+  },
+  "secondary_prompt": {
+    "foreground": "#ff00ff",
+    "template": " ... + "
+  }
 }
