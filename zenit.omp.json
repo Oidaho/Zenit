@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "template": " {{ reason .Code }}"
+        },
+        {
+          "type": "root",
+          "style": "plain",
+          "foreground": "#d00000",
+          "template": " \uf0e7 "
+        },
+        {
+          "type": "os",
+          "style": "plain",
+          "foreground": "#007ACC",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+        },
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#ff00ff",
+          "template": " {{ .UserName }}@{{ .HostName }} "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "background": "#007ACC",
+          "template": "<transparent>\ue0b0</> {{ .Path }} ",
+          "properties": {
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "style": "full"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "background": "#007ACC",
+          "template": "<#ffffff>\ue0b1</> {{ .HEAD }} "
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#007ACC",
+          "template": "\ue0b0 "
+        }
+      ]
+    }
+  ]
+}
