@@ -22,3 +22,10 @@ This theme supports displaying information about:
   - Host system logo
   - User & Host names
   - Git repository
+
+
+## 📥 Installation ##
+The installation method will be described here in the future.
+
+## 🖼️ Screenshots ##
+There will be screenshots of the theme here in the future.
