@@ -52,6 +52,15 @@
           }
         },
         {
+            "type": "python",
+            "style": "diamond",
+            "leading_diamond": "<transparent>\ue0b0</>",
+            "trailing_diamond": "\ue0b0",
+            "background": "#2d2c2d",
+            "foreground": "#eeff00",
+            "template": "   "
+        },
+        {
           "type": "git",
           "style": "diamond",
           "foreground": "transparent",
@@ -64,6 +73,7 @@
     },
     {
       "type": "rprompt",
+      "overflow": "hide",
       "segments": [
         {
           "type": "executiontime",
