@@ -16,6 +16,19 @@ A simple, beautiful and vibrant theme for oh-my-posh shell prompt renderer.
 
 This theme was created solely based on the taste preferences of the author and does not aim to please everyone.
 
+An installation script is also attached to this theme, which will help you customize the theme to your taste:
+
+- Change the standard colors
+- Remove unnecessary blocks
+
+## 🎨 Standard colors
+
+- Main: ![Static Badge](https://img.shields.io/badge/%23ff00ff-ff00ff)
+- Background: ![Static Badge](https://img.shields.io/badge/%232d2c2d-2d2c2d)
+- Error: ![Static Badge](https://img.shields.io/badge/%23ff0000-ff0000)
+- Path: ![Static Badge](https://img.shields.io/badge/%232e6ef8-2e6ef8)
+- Git: ![Static Badge](https://img.shields.io/badge/%23fb4f28-fb4f28)
+
 ## ⚙️ Features
 
 This theme supports displaying information about:
