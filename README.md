@@ -57,7 +57,7 @@ git clone https://github.com/Oidaho/Zenit
 
 Or download the archive of the [latest release](https://github.com/Oidaho/Zenit/releases/latest) and unpack it to a convenient directory.
 
-Next, go to the `./Zenit/scripts` directory and run the desired installation file according to the shell you are using.
+Next, go to the `./Zenit/scripts` directory and run the ps1 installation script.
 
 ## 🖼️ Screenshots
 
