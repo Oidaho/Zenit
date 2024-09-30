@@ -30,8 +30,11 @@ function SetAsDefault {
     if ($userInput -eq "y" -or $userInput -eq "Y") {
         $profile_path = $PROFILE
 
-        $theme_init_command = "oh-my-posh init pwsh --config '$theme_path' | Invoke-Expression"
-        Set-Content -Path $profile_path -Value $theme_init_command
+        $init_theme = "oh-my-posh init pwsh --config '$theme_path' | Invoke-Expression"
+        $disable_venv_prompt = '$env:VIRTUAL_ENV_DISABLE_PROMPT = 1'
+
+        Set-Content -Path $profile_path -Value $init_theme
+        Add-Content -Path $profile_path -Value $disable_venv_prompt
     } 
 }
 
