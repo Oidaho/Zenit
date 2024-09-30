@@ -16,6 +16,8 @@ A simple, beautiful and vibrant theme for oh-my-posh shell prompt renderer.
 
 This theme was created solely based on the taste preferences of the author and does not aim to please everyone.
 
+**На данный момент тема поддерживается в поллной мере на кофигурации Windows + PowerShell!**
+
 An installation script is also attached to this theme, which will help you customize the theme to your taste:
 
 - Change the standard colors
@@ -43,7 +45,19 @@ This theme supports displaying information about:
 
 ## 📥 Installation
 
-The installation method will be described here in the future.
+To start, install [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh), using [this](https://ohmyposh.dev/docs/installation/windows) guide.
+
+**After that, feel free to proceed to this algorithm of actions:**
+
+Take advantage of git cloning:
+
+```shell
+git clone https://github.com/Oidaho/Zenit
+```
+
+Or download the archive of the [latest release](https://github.com/Oidaho/Zenit/releases/latest) and unpack it to a convenient directory.
+
+Next, go to the `./Zenit/scripts` directory and run the desired installation file according to the shell you are using.
 
 ## 🖼️ Screenshots
 
