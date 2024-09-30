@@ -84,11 +84,11 @@
           "style": "diamond",
           "background": "#2d2c2d",
           "foreground_templates": [
-            "{{ if .Error }}#ff0000{{ else }}#04f800{{ end }}"
+            "{{ if .Error }}#ff0000{{ else }}{{if eq .Code 0}}#04f800{{else}}#ffbc04{{end}}{{ end }}"
           ],
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "<transparent>\ue0b2</>",
-          "template": "{{ if .Error }} Failed {{else}} Success {{ end }}",
+          "template": "{{ if eq .Code 1 }} Failed {{else}}{{if eq .Code 0}} Success {{else}} Interrupted {{end}}{{ end }}",
           "properties": {
             "always_enabled": false
           }
