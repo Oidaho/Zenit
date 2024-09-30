@@ -54,4 +54,4 @@ Write-Output "'Zenit' theme has been successfully installed!"
 SetAsDefault
 OutputSep
 
-Write-Output "Success!"
+Write-Output "Success! Restart your PowerShell."
