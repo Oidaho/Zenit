@@ -2,6 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
   "final_space": true,
+  "var": {
+    "Home": "~"
+  },
   "console_title_template": "{{if .Root}} (root) {{ end }} {{ title .UserName}} - {{ title .Shell }}",
   "blocks": [
     {
@@ -41,7 +44,7 @@
           "background": "#2e6ef8",
           "leading_diamond": "<transparent>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
-          "template": " {{ .Folder }} ",
+          "template": " {{if eq .PWD .Var.Home }}{{ .PWD }}{{ else }}{{ .Folder }}{{ end }} ",
           "properties": {
             "folder_icon": "\uf115",
             "folder_separator_icon": "\\",
