@@ -1,6 +1,6 @@
 # ✨ Zenit
 
-![Preview](https://github.com/user-attachments/assets/e1ad06d0-afce-4fd4-bf96-f2cceb4d02ff)
+![Preview](https://github.com/user-attachments/assets/8e364b68-c7a5-413b-8914-664354a1e2e2)
 
 ![License Badge](https://img.shields.io/github/license/Oidaho/Zenit)
 
