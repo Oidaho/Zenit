@@ -16,7 +16,7 @@ A simple, beautiful and vibrant theme for oh-my-posh shell prompt renderer.
 
 This theme was created solely based on the taste preferences of the author and does not aim to please everyone.
 
-**На данный момент тема поддерживается в поллной мере на кофигурации Windows + PowerShell!**
+**At the moment, the theme is fully supported on the Windows + PowerShell configuration!**
 
 An installation script is also attached to this theme, which will help you customize the theme to your taste:
 
