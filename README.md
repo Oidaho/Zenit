@@ -59,6 +59,8 @@ Or download the archive of the [latest release](https://github.com/Oidaho/Zenit/
 
 Next, go to the `./Zenit/scripts` directory and run the ps1 installation script.
 
+(And also don't forget to install JetBrainsMono Nerd Font using the `oh-my-posh font install` command)
+
 ## 🖼️ Screenshots
 
 ![image](https://github.com/user-attachments/assets/fb562c57-0f8b-4527-887a-5f6b6a68443a)
