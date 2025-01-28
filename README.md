@@ -47,7 +47,34 @@ This theme supports displaying information about:
 
 To start, install [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh), using [this](https://ohmyposh.dev/docs/installation/windows) guide.
 
+Also, don't forget to enable the execution of local scripts in PowerShell:
+```shell
+Set-ExecutionPolicy RemoteSigned
+```
+
 **After that, feel free to proceed to this algorithm of actions:**
+
+Run the command to install the font `JetBrainsMono Nerd Font`:
+
+```shell
+oh-my-posh font install
+```
+
+Once you have received the font, set it as the main font for your terminal. For example, for `Windows Terminal`, you can insert the following lines into `settings.json`:
+```json
+"profiles": 
+    {
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "JetBrainsMono Nerd Font"
+            }
+        },
+
+        ...
+    }
+```
 
 Take advantage of git cloning:
 
@@ -58,8 +85,6 @@ git clone https://github.com/Oidaho/Zenit
 Or download the archive of the [latest release](https://github.com/Oidaho/Zenit/releases/latest) and unpack it to a convenient directory.
 
 Next, go to the `./Zenit/scripts` directory and run the ps1 installation script.
-
-(And also don't forget to install JetBrainsMono Nerd Font using the `oh-my-posh font install` command)
 
 ## 🖼️ Screenshots
 
